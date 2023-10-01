@@ -21,10 +21,9 @@ def p_turn(x, y, p):
 
 
 def input_pos(a):
-    if a == '':
-        input_pos(input('Введите значение: '))
-    else:
-        return int(a) - 1
+    while a == '':
+        a = input('Введите значение: ')
+    return int(a) - 1
 
 
 def check_win_con():
@@ -80,5 +79,4 @@ def game():
             break
 
 
-#game()
-print(input_pos(''), type(input_pos('2')))
+game()
