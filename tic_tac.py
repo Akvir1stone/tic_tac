@@ -21,7 +21,7 @@ def p_turn(x, y, p):
 
 
 def input_pos(a):
-    while a == '' or int(a) > 3:
+    while a == '' or int(a) > 3 or int(a) == 0:
         a = input('Введите корректное значение: ')
     return int(a) - 1
 
