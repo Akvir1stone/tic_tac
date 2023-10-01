@@ -29,10 +29,12 @@ def input_pos(a):
 def check_win_con():
     global win_con
     if positions[0][0] == 'X' and positions[1][1] == 'X' and positions[2][2] == 'X':
+        print('-----!!!!!!-----')
         print('Игрок Х победил')
         win_con = True
         return None
     elif positions[0][2] == 'X' and positions[1][1] == 'X' and positions[2][0] == 'X':
+        print('-----!!!!!!-----')
         print('Игрок Х победил')
         win_con = True
         return None
