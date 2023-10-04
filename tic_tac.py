@@ -28,40 +28,40 @@ def input_pos(a):
 
 def check_win_con():
     global win_con
-    if positions[0][0] == 'X' and positions[1][1] == 'X' and positions[2][2] == 'X':
+    if positions[0][0] == positions[1][1] == positions[2][2] == 'X':
         print('-----!!!!!!-----')
         print('Игрок Х победил')
         win_con = True
         return None
-    elif positions[0][2] == 'X' and positions[1][1] == 'X' and positions[2][0] == 'X':
+    elif positions[0][2] == positions[1][1] == positions[2][0] == 'X':
         print('-----!!!!!!-----')
         print('Игрок Х победил')
         win_con = True
         return None
-    elif positions[0][0] == 'X' and positions[1][1] == 'X' and positions[2][2] == 'X':
+    elif positions[0][0] == positions[1][1] == positions[2][2] == 'X':
         print('-----!!!!!!-----')
         print('Игрок Х победил')
         win_con = True
         return None
-    elif positions[0][2] == 'X' and positions[1][1] == 'X' and positions[2][0] == 'X':
+    elif positions[0][2] == positions[1][1] == positions[2][0] == 'X':
         print('-----!!!!!!-----')
         print('Игрок Х победил')
         win_con = True
         return None
     for i in range(3):
-        if positions[i][0] == 'X' and positions[i][1] == 'X' and positions[i][2] == 'X':
+        if positions[i][0] == positions[i][1] == positions[i][2] == 'X':
             print('-----!!!!!!-----')
             print('Игрок Х победил')
             win_con = True
-        elif positions[0][i] == 'X' and positions[1][i] == 'X' and positions[2][i] == 'X':
+        elif positions[0][i] == positions[1][i] == positions[2][i] == 'X':
             print('-----!!!!!!-----')
             print('Игрок Х победил')
             win_con = True
-        elif positions[i][0] == 'X' and positions[i][1] == 'X' and positions[i][2] == 'O':
+        elif positions[i][0] == positions[i][1] == positions[i][2] == 'O':
             print('-----!!!!!!-----')
             print('Игрок O победил')
             win_con = True
-        elif positions[0][i] == 'X' and positions[1][i] == 'X' and positions[2][i] == 'O':
+        elif positions[0][i] == positions[1][i] == positions[2][i] == 'O':
             print('-----!!!!!!-----')
             print('Игрок O победил')
             win_con = True
