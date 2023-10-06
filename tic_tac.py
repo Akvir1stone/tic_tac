@@ -38,14 +38,14 @@ def check_win_con():
         print('Игрок Х победил')
         win_con = True
         return None
-    elif positions[0][0] == positions[1][1] == positions[2][2] == 'X':
+    elif positions[0][0] == positions[1][1] == positions[2][2] == 'O':
         print('-----!!!!!!-----')
-        print('Игрок Х победил')
+        print('Игрок O победил')
         win_con = True
         return None
-    elif positions[0][2] == positions[1][1] == positions[2][0] == 'X':
+    elif positions[0][2] == positions[1][1] == positions[2][0] == 'O':
         print('-----!!!!!!-----')
-        print('Игрок Х победил')
+        print('Игрок O победил')
         win_con = True
         return None
     for i in range(3):
